@@ -22,5 +22,5 @@ Instructions for setting up and running the URL shortener.  Replace the placehol
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/your-username/your-url-shortener.git](https://github.com/your-username/your-url-shortener.git)
-    cd your-url-shortener
+    git clone https://github.com/OptimistGuy03/URL-Shortner
+    cd URL-Shortner
