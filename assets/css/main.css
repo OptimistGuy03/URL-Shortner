@@ -1,0 +1,162 @@
+/* General body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure body takes at least the full viewport height */
+    padding: 30px; /* Reduced top/bottom padding */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+    font-size: 18px; /* Slightly smaller base font size */
+    line-height: 1.6; /* Improved readability */
+    color: #444; /* Darker, more accessible text color */
+    background-color: #f4f4f4; /* Light, neutral background */
+}
+
+/* Main heading */
+h1 {
+    font-size: 3.5em; /* Slightly smaller, more modern size */
+    margin-bottom: 0.5em; /* Reduced bottom margin */
+    color: #2c3e50; /* Dark, prominent heading color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+/* Container for the main content */
+article {
+    background-color: #fff; /* White background for content block */
+    color: #333;
+    padding: 2em;
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 800px; /* Slightly wider max width */
+    width: 95%; /* Ensure responsiveness */
+    text-align: left; /* Align text within the article to the left */
+    margin-bottom: 2em; /* Add some space below the main content */
+}
+
+/* Links */
+a {
+    color: #e67e22; /* Vibrant orange for links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+    font-weight: 500; /* Slightly bolder link text */
+}
+
+a:hover {
+    color: #2c3e50; /* Darker color on hover */
+    text-decoration: underline; /* Subtle underline on hover */
+}
+
+/* Images */
+img {
+    border: none;
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+/* Logo styling */
+.logo {
+    width: 80px; /* Fixed width for the logo */
+    height: 80px; /* Fixed height for the logo */
+    margin-right: 1.5em; /* Increased right margin */
+    vertical-align: middle; /* Align logo with surrounding text */
+    border-radius: 50%; /* Make the logo circular */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* Subtle shadow for the logo */
+    float: left; /* Keep logo floated left for larger screens */
+}
+
+/* Justified text */
+.justify {
+    text-align: justify;
+    hyphens: auto; /* Enable hyphenation for better text flow */
+}
+
+/* Media query for screens up to 800px width */
+@media only screen and (max-width: 800px) {
+    h1,
+    h2 {
+        text-align: center; /* Center headings on smaller screens */
+    }
+
+    .logo {
+        float: none; /* Don't float the logo */
+        margin: 0 auto 1em; /* Center horizontally and add bottom margin */
+        display: block; /* Make logo a block-level element */
+        width: 60px; /* Slightly smaller logo on smaller screens */
+        height: 60px;
+    }
+}
+
+/* Media query for screens up to 550px width */
+@media only screen and (max-width: 550px) {
+    body {
+        padding-top: 15px; /* Further reduced top padding */
+        font-size: 16px; /* Smaller font size on very small screens */
+    }
+
+    h1 {
+        font-size: 2.8em; /* Smaller main heading */
+        margin-bottom: 0.3em;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.8em;
+    }
+}
+
+/* Light orange background */
+.bg-orange-light {
+    background-color: #ffe0b2; /* Lighter shade of orange */
+    padding: 0.5em; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Dark orange background */
+.bg-orange-dark {
+    background-color: #f57c00; /* Deeper shade of orange */
+    color: #fff; /* White text on dark background */
+    padding: 0.5em 1em; /* Add horizontal padding */
+    border-radius: 5px;
+    font-weight: bold; /* Make text bold */
+}
+
+/* Small text */
+.text-sm {
+    font-size: 0.9em; /* Slightly smaller font size */
+    color: #777; /* Muted text color */
+}
+
+/* Message text */
+#message {
+    font-weight: 700; /* Even bolder message text */
+    color: #27ae60; /* Green color for success messages */
+    margin-top: 1em; /* Add top margin */
+}
+
+/* Copy button/area */
+#copy {
+    cursor: pointer;
+    background-color: #ddd; /* Light gray background */
+    padding: 0.3em 0.6em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#copy:hover {
+    background-color: #ccc;
+}
+
+/* Question text (interactive) */
+.question {
+    cursor: grab; /* Indicate interactivity */
+    color: #555;
+    margin-top: 1.5em;
+    transition: color 0.2s ease-in-out;
+}
+
+.question:hover {
+    color: #007bff; /* Example hover color */
+}

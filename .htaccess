@@ -1,0 +1,16 @@
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+Options +FollowSymLinks
+RewriteEngine on
+
+# Force HTTPS in the browser
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Enable the URL 'codes' to be sent as GET parameters
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9-]+)/?$ ./index.php?code=$1 [NC,L]
